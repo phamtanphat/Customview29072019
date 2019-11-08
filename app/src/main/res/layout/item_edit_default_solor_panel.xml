@@ -7,11 +7,13 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:paddingBottom="10dp"
         android:id="@+id/linearContain"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content">
         <EditText
+            android:maxLines="1"
             android:id="@+id/edittextDefaultSolar"
             android:background="@null"
             android:hint="@string/label_60_cell_solar_modules"
@@ -36,8 +38,8 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <View
+        android:background="@color/colorGray"
         android:id="@+id/viewLineBottom"
-        android:background="@drawable/bg_edit_solar_panel"
         android:layout_below="@id/linearContain"
         android:layout_height="1dp"
         android:layout_width="match_parent"/>

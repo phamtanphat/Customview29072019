@@ -3,16 +3,19 @@ package com.example.customview29072019;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class DefaultSolarItem extends RelativeLayout {
 
-    private EditText mEdt;
+    private RelativeLayout mRelativeLayout;
     private TextView mTextCell;
+    private  View view;
 
     private String mValeCell;
 
@@ -41,7 +44,7 @@ public class DefaultSolarItem extends RelativeLayout {
 
 
     private void mapview(View view) {
-        mEdt = view.findViewById(R.id.edittextDefaultSolar);
+        mRelativeLayout = view.findViewById(R.id.relativeContainDefaultSolar);
         mTextCell = view.findViewById(R.id.textviewValueDefaultSolar);
     }
     private void loadAttrsView(AttributeSet attributeSet) {
@@ -54,5 +57,10 @@ public class DefaultSolarItem extends RelativeLayout {
     private void setupView() {
         mTextCell.setText(mValeCell);
     }
+    public void setBackgroud(int color){
+        mRelativeLayout.setBackgroundColor(color);
+    }
+
+
 
 }
