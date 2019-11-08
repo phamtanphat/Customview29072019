@@ -29,6 +29,12 @@
             android:id="@+id/textviewDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <com.example.customview29072019.DefaultSolarItem
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textviewDefault"
+            android:layout_width="match_parent"
+            app:textValueCell="60"
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
 
 </ScrollView>

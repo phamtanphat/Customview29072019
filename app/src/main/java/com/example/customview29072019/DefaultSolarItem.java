@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.util.zip.Inflater;
-
 public class DefaultSolarItem extends RelativeLayout {
 
     private EditText mEdt;
@@ -35,7 +33,7 @@ public class DefaultSolarItem extends RelativeLayout {
 
     private void init(AttributeSet attributeSet) {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-        View view = layoutInflater.inflate(R.layout.item_edit_default_solor_panel,null,false);
+        View view = layoutInflater.inflate(R.layout.item_edit_default_solor_panel,this,true);
         mapview(view);
         loadAttrsView(attributeSet);
         setupView();
