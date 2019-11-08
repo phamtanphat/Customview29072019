@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
+    android:id="@+id/relativeContainDefaultSolar"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -11,12 +12,14 @@
         android:gravity="center"
         android:layout_height="wrap_content">
         <EditText
+            android:id="@+id/edittextDefaultSolar"
             android:background="@null"
             android:hint="@string/label_60_cell_solar_modules"
             android:layout_weight="7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <TextView
+            android:id="@+id/textviewCellDefaultSolar"
             android:gravity="center"
             android:textColor="#000000"
             android:text="@string/label_cell"
@@ -24,6 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <TextView
+            android:id="@+id/textviewValueDefaultSolar"
             android:gravity="center"
             android:textColor="#989898"
             android:text="@string/label_60"
@@ -32,6 +36,7 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <View
+        android:id="@+id/viewLineBottom"
         android:background="@drawable/bg_edit_solar_panel"
         android:layout_below="@id/linearContain"
         android:layout_height="1dp"
